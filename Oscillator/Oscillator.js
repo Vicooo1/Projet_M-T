@@ -10,8 +10,8 @@ const waveSelect = document.getElementById("waveSelect");
 
 function mapYToFrequency(y) {
     const screenHeight = window.innerHeight;
-    const minFreq = 100;
-    const maxFreq = 1000;
+    const minFreq = 1;
+    const maxFreq = 1500;
     const percent = 1 - (y / screenHeight);
     return minFreq + percent * (maxFreq - minFreq);
 }
